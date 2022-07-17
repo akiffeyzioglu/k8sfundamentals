@@ -34,6 +34,7 @@ spec:
       containers:
       - name: elasticsearch
         image: docker.elastic.co/elasticsearch/elasticsearch:7.16.0
+        imagePullPolicy: IfNotPresent
         resources:
             limits:
               cpu: 1000m

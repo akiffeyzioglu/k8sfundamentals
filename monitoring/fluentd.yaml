@@ -60,7 +60,7 @@ spec:
       containers:
       - name: fluentd
         image: fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch
-
+        imagePullPolicy: IfNotPresent
         env:
           - name:  FLUENT_ELASTICSEARCH_HOST
             value: "elasticsearch"
